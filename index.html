@@ -25,7 +25,9 @@ h1,h2,h3,h4,h5{font-family:'Times New Roman', Times, serif;}
 /* ===== HERO ===== */
 .hero{
   height:78vh;
-  background:url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=80') center/cover;
+  background-image:url('https://commons.wikimedia.org/wiki/Special:FilePath/L%C3%A2m_Vi%C3%AAn_%C4%90%C3%A0_L%E1%BA%A1t.JPG?width=1600'), url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1600&q=80');
+  background-position:center;
+  background-size:cover;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -40,6 +42,14 @@ h1,h2,h3,h4,h5{font-family:'Times New Roman', Times, serif;}
   background:rgba(0,0,0,.5);
 }
 .hero-content{position:relative;z-index:2;padding:0 15px;}
+.hero-credit{
+  position:absolute;
+  right:12px;
+  bottom:8px;
+  z-index:2;
+  color:rgba(255,255,255,.75);
+  font-size:.75rem;
+}
 .hero-content h1{font-size:clamp(2rem,5vw,3.4rem);letter-spacing:2px;}
 .hero-content .badge-line span{
   display:inline-block;
@@ -185,6 +195,7 @@ iframe{
       <span><i class="fa fa-money-bill"></i> ~2.500.000đ/người</span>
     </div>
   </div>
+  <div class="hero-credit">Quảng trường Lâm Viên · Ảnh: Wikimedia Commons (CC BY-SA 4.0)</div>
 </div>
 
 <!-- ===== INFO ===== -->
